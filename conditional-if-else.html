@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conditional if-else</title>
+</head>
+<body>
+   /****   As a rule, you should consider using curly braces all the time. This enables a user to add
+code into the code block without having to think about whether the curly braces exist.
+You can also create chained (also known as cascading) if statements by adding another if
+after the else keyword. Here is an example of a cascading if    ****/
+   
+    <script>
+    var age = prompt('Enter your age','age');
+    if(isNaN(age)){
+        age=0;
+        alert('you need to enter the valid age');
+        }
+    else if(Number(age)>=50){
+        age=Number(age)+1;
+        alert("your are old! you will be soon " +age+" years old");
+    }
+    else if(Number(age)<=20)
+        {   age=Number(age)+1;
+            alert("you are child!  you will be soon "+age+"years old");
+        }
+    else
+        {
+            alert("you will be soon " +(Number(age)+1)+"years old");
+        }
+    
+    </script>
+</body>
+</html>

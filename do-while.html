@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>do-while</title>
+</head>
+<body>
+    <script>
+        
+    var numberToTest = prompt('Type number here.', '');
+var index = 2;
+var isPrime = true;
+while (index < numberToTest) {
+ if (numberToTest % index == 0) {
+ isPrime = false;
+ break;
+ }
+ index++;
+}
+if (isPrime) {
+ alert(numberToTest + ' is a prime number');
+}
+else {
+ alert(numberToTest + ' is not a prime number because it is divisible by ' + index);
+}
+            
+    
+    </script>
+</body>
+</html>

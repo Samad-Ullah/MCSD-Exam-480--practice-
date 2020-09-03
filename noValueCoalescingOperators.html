@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>No value coalescing operators</title>
+</head>
+<body>
+   <script>
+     var costumer=prompt('enter your name');
+     var companyName=prompt('enter your company name');
+     alert("hello "+(costumer || companyName || 'Valued Customer'));
+    
+    
+    </script>
+       
+       
+       
+       /***   The && (and) operator exhibits similar behavior but returns the first empty value instead
+of the first non-empty value. If all variables have a value, Valued Customer is returned. There
+isn’t much real-world value to this behavior, but it is a tool in your JavaScript toolbox ****/
+</body>
+</html>
